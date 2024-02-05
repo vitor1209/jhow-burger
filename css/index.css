@@ -1,0 +1,841 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+}
+
+
+ul {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+a:hover{
+  color: #1abc9c;
+}
+
+li {
+  display: inline;
+  margin-right: 3rem;
+  left: 550px;
+  position: relative;
+  font-size: 1.1rem; 
+}
+
+
+.btn-menu{
+  cursor: pointer;
+  display: none;
+}
+
+.btn-menu div{
+  width: 32px;
+  height: 4px;
+  background: #fff;
+  margin: 8px;
+}
+
+
+.btn-menu-x{
+  cursor: pointer;
+  display: none;
+}
+
+.btn-menu-x .linha1{
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transform: rotate(45deg);
+}
+
+.btn-menu-x .linha2{
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transform: rotate(135deg);
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 80px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu_mobile{
+  position: absolute;
+  right: 5rem;
+  top: 70px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden; 
+  display: none;
+  height: 200px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu_mobile li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1{
+  font-size: 1.7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #fff;
+}
+
+/*menu-fim*/
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.sobrepor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.titulo h2{
+  text-align: center;
+  font-family: Fantasy;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  position: relative;
+  top: 13rem;
+}
+
+span{
+  font-size: 82px;
+  display: block;
+}
+
+.linha{
+  display: block;
+  margin: 20px auto 50px;
+  width: 210px;
+  max-width: 90%;
+  top: 12rem;
+  position: relative;
+}
+
+/*titulo*/
+
+.sobre{
+  height: 90vh;
+  position: relative;
+  top: 25.3rem;
+  width: 100%;
+  position: relative;
+  background: url(../img/sobre-fundo.jpg) right top no-repeat;
+  background-size: auto 100%;
+  padding: 0;
+}
+
+.sobre-e{
+  width: 40%;
+  height: 100%;
+  float: left;
+  background: #fff;
+  padding-left: 90px;
+  padding-right: 40px;
+  padding-top: 40px;
+} 
+
+.sobre-e h3{
+  font-family: Fantasy;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+}
+
+.sobre-e h4{
+  font-family: Fantasy;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: black;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+/*fim cardapio*/
+
+.local{
+  background-image: url(../img/fundo-vermelho.jpg);
+  color: #fff;
+  height: 25vh;
+  position: relative;
+  top: 22rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt_local{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 8.8rem;
+}
+
+.local h3{
+  bottom: 40px;
+  position: relative;
+  left: 100px;
+}
+
+.local h4{
+  right: 100px;
+  position: relative;
+}
+
+.local .ENDEREÇO{
+  position: relative;
+  left: 60px;
+}
+
+.local .HORÁRIOS{
+  position: relative;
+  left: 130px;
+}
+
+.local .HORÁRIOS{
+  position: relative;
+  left: 120px;
+}
+
+.local .HORÁRIOS-r{
+  right: 235px;
+  position: relative;
+}
+
+.local .TELEFONE-r{
+  right: 150px;
+  position: relative;
+}
+
+.local .TELEFONE{
+  left: 25px;
+  position: relative;
+}
+
+/*fim local*/
+
+.Cardápio{
+height: 90vh;
+position: relative;
+top: 20rem;
+width: 100%;
+}
+
+.Cardápio img{
+height: 90vh;
+width: 100%;
+position: absolute;
+z-index: -1;
+}
+
+.txt_cardapio{
+  text-align: center;
+  top: 12rem;
+  position: relative;
+  color: #fff;
+}
+
+.txt_cardapio h3{
+ font-family: Fantasy;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.txt_cardapio h4{
+  font-family: Fantasy;
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 1.3;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.txt_cardapio p{
+  color: #fff;
+  width: 540px;
+  text-align: center;
+  position: relative;
+  left: 27.4rem;
+  
+}
+
+.sobrepor_cardapio{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.btn-cardapio{
+  border: solid #fff;
+  width: 11.4rem;
+  position: relative;
+  left: 38.1rem;
+  padding-left:6px;
+}
+
+.link-btn-cardapio{
+  width: 1rem;
+  display: block;
+}
+
+.btn-cardapio:hover{
+  background-color: #fff;
+  color: black;
+  transition: all 0.8s ease-in-out;
+}
+
+.link-btn-cardapio a{
+  width: 11.4rem;
+}
+
+.link-btn-cardapio:hover{
+  color: black;
+}
+
+/*fim cardapio*/
+
+.contato{
+  height: 65vh;
+  position: relative;
+  top: 18.8rem;
+  width: 100%;
+  color: black;
+}
+
+.contato-e{
+  position: relative;
+  width: 50%;
+  color: black;
+}
+
+.txt-contato{
+  position: relative;
+  left: 5rem;
+  top: 7rem;
+}
+
+.txt-contato b{
+  font-family: Fantasy;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contato-d{
+  position: relative;
+  bottom: 15.85rem;
+  width: 50%;
+  left: 50%;
+}
+
+iframe{
+  height: 67.3vh;
+  width: 100%;
+  position: relative;
+}
+
+.btn_contato{
+  border: solid black;
+  width: 9.7rem;
+  position: relative;
+  padding-left:10px;
+}
+
+.link_btn_contato{
+  width: 1rem;
+  display: block;
+}
+
+.btn_contato:hover{
+  background-color: black;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+
+.link_btn_contato {
+  width: 9rem;
+  text-decoration: none;
+  color: black;
+  font-family: Fantasy;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.link_btn_contato:hover{
+  color: #fff;
+}
+
+/*fim contato*/
+
+.footer{
+  height: 50vh;
+  position: relative;
+  top: 18.8rem;
+  width: 100%;
+  background-color: black;
+}
+
+.linha_footer{
+  position: relative;
+  height: 1px;
+  width: 80%;
+  left: 10%;
+  background-color: #fffafa9e;
+  display: block;
+  bottom: -6rem;
+}
+
+.footer{
+  color: #fffafa9e;
+  text-align: center;
+}
+
+.txt_footer p{
+  color: #fffafa9e;
+}
+
+.txt_footer{
+  top: 5rem;
+  position: relative;
+}
+
+.footer h5{
+  position: relative;
+  top: 7rem;
+}
+
+.ocultar{
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.aparecer{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0%);
+  transition: all 1s;
+}
+
+@media screen and (max-width: 600px){
+
+  .video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+  .menu a{
+    font-size: 20px;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+
+li {
+  font-size: 1rem; 
+  margin-right: 3rem;
+  left: 120px;
+  display: block;
+}
+
+ul {
+  display: none;
+}
+
+.menu{
+  line-height: 12px;
+  padding: 0 40px;
+}
+
+
+.btn-menu{
+  display: block;
+  top: 0.5rem;
+  right: 1.3rem;
+  position: absolute;     
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-menu div{
+  width: 38px;
+  height: 4px;
+  background: #fff;
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-menu-x{
+    display: none;
+    top: -0.5rem;
+    right: 0.3rem;
+    position: absolute;     
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.btn-menu-x .linha1{
+  width: 38px;
+  height: 5px;
+  background: #fff;
+  margin: 8px;
+  transform: rotate(45deg);
+  top: 28px;
+  right: 1rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.btn-menu-x .linha2{
+  width: 38px;
+  height: 5px;
+  background: #fff;
+  margin: 8px;
+  transform: rotate(135deg);
+  top: 1rem;
+  right: 1rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.abrir{
+  display: block;
+  height: 200px;
+}
+
+.fechar{
+  display: none;
+} 
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu_mobile {
+  display: none; /* Inicialmente oculto */
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.menu_mobile.visible {
+  display: block; /* Exibe quando a classe 'visible' é adicionada */
+}
+
+.menu_mobile {
+  display: none; 
+  right: 1.3rem;
+  align-items: center;
+  text-align: center ;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu_mobile li{
+  left: 2rem;
+  top: 2rem;
+}
+
+.titulo h2{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+  top: 19.7rem;
+}
+
+span{
+  font-size: 30px;
+}
+
+.linha{
+  margin: 20px auto 50px;
+  width: 130px;
+  max-width: 90%;
+  top: 19rem;
+}
+
+.sobre{
+  top: 40.1rem;
+  height: 112vh;
+  background-size: auto 100%;
+  padding: 0;
+}
+
+.sobre-e{
+  width: 87.9%;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+} 
+
+.local{
+  height: 58vh;
+  top: 40.1rem;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.txt_local{
+  display: block;
+  left: 0px;
+  width: 100%;
+}
+
+.local .ENDEREÇO{
+  left: 25px;
+  margin-top: 50px;
+  font-weight: 900;
+  top: -1.5rem;
+} 
+
+.local .ENDEREÇO-r{
+  position: relative;
+  left: 30px;
+  margin-bottom: 40px;
+  top: -1.7rem;
+}
+
+.local .HORÁRIOS{
+  left: 30px;
+  top: 0.8rem;
+  font-weight: 900;
+}
+
+.local .HORÁRIOS-r{
+  margin-bottom: 40px;
+  top: 0.4rem;
+  left: 30px;
+  width: 350px;
+}
+
+.local .TELEFONE-r{
+  right: -20px;
+  margin-bottom: 50px;
+  top: 2.3rem;
+}
+
+.local .TELEFONE{
+  left: 25px;
+  top: 2.3rem;
+  font-weight: 900;
+}
+
+.Cardápio{
+  height: 75vh;
+  top: 38.8rem;
+  width: 100%;
+}
+
+ .Cardápio img{
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  }
+  
+  .txt_cardapio{
+    text-align: center;
+    top: 12rem;
+  }
+  
+  .txt_cardapio h3{
+    font-size: 12px;
+    letter-spacing: 2.5px;
+  }
+  
+  .txt_cardapio h4{
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  
+.txt_cardapio p{
+  color: #fff;
+  width: 360px;
+  text-align: center;
+  position: relative;
+  left: 1.7rem;
+  }
+  
+.sobrepor_cardapio{
+  width: 100%;
+  height: 75vh;
+}
+  
+  .btn-cardapio{
+    width: 10rem;
+    left: 7rem;
+    top: 1rem;
+    font-weight: 500;
+  }
+  
+  .link-btn-cardapio{
+    display: block;
+    width: 9.7rem;
+    padding-left:10px;
+  }
+  
+  .btn-cardapio:hover{
+    background-color: #fff;
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .link-btn-cardapio a{
+    width: 11.4rem;
+  }
+  
+.contato{
+  height: 50vh;
+  top: 34.9rem;
+  width: 100%;
+}
+
+.contato-e{
+  width: 100%;
+}
+
+.txt-contato{
+  left: 5rem;
+  top: 7rem;
+  width: 300px;
+}
+
+.txt-contato b{
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.contato-d{
+  top: 12.7rem;
+  width: 100%;
+  left:0;
+}
+
+iframe{
+  height: 30vh;
+  width: 100%;
+}
+
+.btn_contato{
+  width: 14rem;
+  padding-left:0px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.link_btn_contato{
+  width: 1rem;
+}
+
+.link_btn_contato {
+  width: 9rem;
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+
+.footer{
+  height: 45vh;
+  top: 50.9rem;
+  width: 100%;
+  padding-bottom: 2.5rem;
+}
+
+.ocultar{
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.aparecer{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0%);
+  transition: all 1s;
+}
+
+}
